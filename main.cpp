@@ -144,7 +144,7 @@ void printClientsTable(vector<Client> &clients)
   cout << setw(colWidths[2]) << "Pin code";
   cout << setw(colWidths[3]) << "Name";
   cout << setw(colWidths[4]) << "Phone";
-  cout << setw(colWidths[1]) << "Balance" << endl;
+  cout << setw(colWidths[5]) << "Balance" << endl;
   divider(totalWidth, "_");
   for (i = 0; i < clients.size(); i++)
   {
@@ -154,7 +154,7 @@ void printClientsTable(vector<Client> &clients)
     cout << setw(colWidths[2]) << clients[i].PinCode;
     cout << setw(colWidths[3]) << clients[i].Name;
     cout << setw(colWidths[4]) << clients[i].Phone;
-    cout << setw(colWidths[1]) << clients[i].Balance << endl;
+    cout << setw(colWidths[5]) << clients[i].Balance << endl;
     divider(totalWidth, "_");
   }
 }
